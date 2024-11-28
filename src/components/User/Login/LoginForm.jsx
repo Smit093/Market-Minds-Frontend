@@ -22,7 +22,7 @@ const LoginForm = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("https://market-minds-backend.onrender.com/login");
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_BASE_URL}login`);
                 if (!response.ok) {
                     throw new Error("Network response was not okay!");
                 }

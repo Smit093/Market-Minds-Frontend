@@ -33,7 +33,7 @@ const SignUpForm = () => {
         setSuccess('');
 
         try {
-            const response = await axios.post("https://market-minds-backend.onrender.com/signup", formData);
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_BASE_URL}signup`, formData);
             console.log(response.data);
             setSuccess(response.data.message);
             setLoggedin(true);
