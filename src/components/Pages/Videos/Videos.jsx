@@ -17,7 +17,7 @@ export default function Videos() {
 
     async function fetchData() {
       try {
-        const response = await fetch("https://market-minds-backend.onrender.com/videos");
+        const response = await fetch("http://market-minds-backend.onrender.com//videos");
         if (!response.ok) {
           throw new Error('Network response was not okay!');
         }
