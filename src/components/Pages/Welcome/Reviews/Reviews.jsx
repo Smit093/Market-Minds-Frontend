@@ -42,7 +42,7 @@ function Reviews() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch(`${import.meta.env.VITE_BACKEND_BASE_URL}`);
+                const response = await fetch("https://market-minds-backend.onrender.com/");
 
                 if (!response.ok) {
                     throw new Error('Network response was not okay!');
