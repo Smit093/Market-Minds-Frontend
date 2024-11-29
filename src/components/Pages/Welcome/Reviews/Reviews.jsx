@@ -50,7 +50,6 @@ function Reviews() {
 
                 const result = await response.json();
                 setData(result.reviews); // Assuming result.reviews is an array
-                console.log(result.reviews);
             } catch (error) {
                 console.log('Error fetching the data:', error);
                 setError(error.message); // Set error message if needed
