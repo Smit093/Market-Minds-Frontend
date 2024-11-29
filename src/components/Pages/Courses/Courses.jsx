@@ -17,7 +17,7 @@ export default function Courses() {
 
     const fetchData = async () => {
       try {
-        const response = await fetch("http://market-minds-backend.onrender.com/courses");
+        const response = await fetch("https://market-minds-backend.onrender.com/courses");
         if (!response.ok) {
           throw new Error('Network response was not okay!');
         }

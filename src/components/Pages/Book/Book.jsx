@@ -18,7 +18,7 @@ export default function Book() {
 
     const fetchBooks = async () => {
       try {
-        const response = await fetch("http://market-minds-backend.onrender.com/books"); // Adjust URL as needed
+        const response = await fetch("https://market-minds-backend.onrender.com/books"); // Adjust URL as needed
         if (!response.ok) {
           throw new Error('Network response was not okay!');
         }
