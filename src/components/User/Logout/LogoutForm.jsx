@@ -9,8 +9,6 @@ export default function LogoutForm() {
   const navigate = useNavigate();
   const { userEmail } = useContext(UserContext);
 
-  console.log(userEmail);
-
   const handleLogout = (event) => {
     event.preventDefault();
     setLoggedin(false);
