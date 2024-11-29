@@ -42,7 +42,7 @@ function Reviews() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("http://market-minds-backend.onrender.com//");
+                const response = await fetch("http://market-minds-backend.onrender.com/");
 
                 if (!response.ok) {
                     throw new Error('Network response was not okay!');
