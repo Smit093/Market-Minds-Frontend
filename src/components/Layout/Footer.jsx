@@ -6,6 +6,10 @@ export default function Footer() {
     <footer className="bg-gray-800 text-white p-5 text-center font-poppins">
       <div className="flex flex-col items-center">
         <p className="m-0">&copy; {new Date().getFullYear()} <i>Market Minds</i>. All rights reserved.</p>
+<p className="mt-2">Made by 
+  <Link href="https://smitdev.netlify.app/" className="text-blue-500 hover:underline ml-1">Smit Patel</Link>
+</p>
+
         <div className="mt-2 flex gap-4">
           <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white text-2xl hover:text-gray-300">
             <FaFacebookF />
